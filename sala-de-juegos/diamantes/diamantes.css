@@ -1,0 +1,284 @@
+*{box-sizing:border-box;}
+
+body{
+  margin:0;
+  background:radial-gradient(circle,#00122a,#000000 80%);
+  font-family:'Cinzel',serif;
+  color:white;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+/* Banner */
+.banner{
+  width:100%;
+  height:clamp(180px,28vw,340px);
+  overflow:hidden;
+  background:black;
+}
+.banner video{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+}
+
+.gold-divider{
+  width:100%;
+  height:2px;
+  background:linear-gradient(90deg,transparent,#33c4ff,transparent);
+}
+
+.btn-volver{
+  margin:12px 0;
+  padding:10px 28px;
+  border-radius:30px;
+  background:linear-gradient(135deg,#dfffff,#5dd6ff,#1ea2ff);
+  color:#00122a;
+  font-weight:900;
+  text-decoration:none;
+  box-shadow:0 0 25px #34c9ff;
+}
+
+.home-title{width:100%;max-width:900px;}
+
+.hero-phrase{
+  text-align:center;
+  font-weight:900;
+  margin:20px;
+  font-size:20px;
+  background:linear-gradient(90deg,transparent,#000,#000,transparent);
+  padding:8px 20px;
+}
+
+/* Layout */
+.diamantes-layout{
+  display:flex;
+  gap:80px;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  max-width:1200px;
+}
+
+/* Zona */
+.diamantes-area{
+  position:relative;
+  width:520px;
+  height:460px;
+}
+
+
+/* ============================================================
+   💎 DIAMANTE 3D INCLINADO — ESTILO CASINO / EMOJI REALISTA
+============================================================ */
+
+.diamond{
+  position:absolute;
+  width:140px;
+  height:130px;
+
+  /* prisma inclinado con facetas */
+  clip-path: polygon(
+    25% 5%,
+    85% 0%,
+    100% 45%,
+    60% 100%,
+    10% 75%,
+    0% 35%
+  );
+
+  background: linear-gradient(
+    145deg,
+    #9cf6ff,
+    #5cd8ff,
+    #1aa8ff,
+    #9df3ff
+  );
+
+  border:2px solid rgba(140,255,255,.9);
+
+  box-shadow:
+    0 0 25px rgba(0,220,255,.9),
+    inset -22px -28px 35px rgba(0,0,0,.28),
+    inset 10px 12px 35px rgba(255,255,255,.75);
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  cursor:pointer;
+  transition: transform .35s;
+
+  animation: floatDiamond 2.4s ease-in-out infinite;
+}
+
+/* ✨ brillo cruzando la gema */
+.diamond::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  clip-path:inherit;
+
+  background:linear-gradient(
+    110deg,
+    transparent 35%,
+    rgba(255,255,255,.9) 50%,
+    transparent 65%
+  );
+
+  opacity:.45;
+  filter:blur(1px);
+  pointer-events:none;
+
+  animation: shineSweep 2.8s infinite;
+}
+
+@keyframes shineSweep{
+  0%{transform:translateX(-140%);}
+  100%{transform:translateX(140%);}
+}
+
+/* movimiento suave premium */
+@keyframes floatDiamond{
+  0%,100%{transform:translateY(0) scale(1);}
+  50%{transform:translateY(-9px) scale(1.05);}
+}
+
+/* hover */
+.diamond:hover{
+  transform:scale(1.08);
+}
+
+/* al revelar */
+.diamond.revealed{
+  transform:scale(1.12);
+  box-shadow:
+    0 0 70px cyan,
+    inset 0 0 45px white;
+}
+
+
+/* ==============================
+   🍓 FRUTA INTERNA — MÁS GRANDE
+============================== */
+
+.diamond span{
+  font-size:2.6rem;
+  filter:drop-shadow(0 0 6px rgba(0,0,0,.6));
+}
+
+
+
+/* =========================
+   POSICIONES DESPARRAMADAS
+========================= */
+
+.diamond:nth-child(1){top:20px;left:40px;}
+.diamond:nth-child(2){top:60px;left:180px;}
+.diamond:nth-child(3){top:10px;right:40px;}
+
+.diamond:nth-child(4){top:150px;left:10px;}
+.diamond:nth-child(5){top:160px;left:140px;}
+.diamond:nth-child(6){top:135px;right:60px;}
+
+.diamond:nth-child(7){bottom:150px;left:60px;}
+.diamond:nth-child(8){bottom:160px;left:220px;}
+.diamond:nth-child(9){bottom:140px;right:40px;}
+
+.diamond:nth-child(10){bottom:35px;left:20px;}
+.diamond:nth-child(11){bottom:20px;left:200px;}
+.diamond:nth-child(12){bottom:35px;right:50px;}
+
+
+
+/* ======================
+   BOTONES DE CONTACTO
+====================== */
+
+.lineas-directas{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+
+.lineas-directas a{
+  padding:14px 28px;
+  border-radius:40px;
+  font-weight:900;
+  text-decoration:none;
+  color:white;
+  text-align:center;
+  box-shadow:0 0 35px #1ec6ff;
+}
+
+.btn-wp1{background:#2ecc71;}
+.btn-wp2{background:#ff5fa2;}
+.btn-tg1{background:#3498db;}
+.btn-tg2{background:#9b59b6;}
+
+
+
+/* ======================
+   MODAL TURQUESA
+====================== */
+
+.hidden{display:none!important;}
+
+#mensajePremio{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,15,.9);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:1000;
+}
+
+.contenedor-premio{
+  background:linear-gradient(135deg,#003b3b,#007a7a);
+  padding:40px;
+  border-radius:20px;
+  border:3px solid #3fffe0;
+  text-align:center;
+  box-shadow:0 0 60px #4dfff0;
+  max-width:90%;
+}
+
+.contenedor-premio h2{
+  font-family:'Great Vibes',cursive;
+  font-size:48px;
+  color:#aafff2;
+  margin:0;
+}
+
+.premio-label{
+  margin:10px 0 6px;
+  font-weight:900;
+}
+
+#resultadoSecuencia{
+  margin:8px 0 15px;
+  font-size:46px;
+  color:#b8fff3;
+  font-weight:900;
+  text-shadow:0 0 20px rgba(0,255,230,.7);
+}
+
+.captura-box{
+  color:#dffef7;
+  font-weight:bold;
+  margin-top:8px;
+  padding-top:10px;
+  border-top:1px solid rgba(120,220,255,.4);
+}
+
+.volver-link{
+  display:block;
+  margin-top:18px;
+  color:#9fffea;
+  text-decoration:none;
+  font-size:11px;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Juegos Jackpot | Red Jackpot Queen's</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cinzel:wght@700;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 🔙 BOTÓN VOLVER -->
+<div class="nav-container">
+  <a href="../index.html" style="text-decoration:none;">
+    <button class="cta-nav">VOLVER AL INICIO</button>
+  </a>
+</div>
+
+<!-- 🎥 BANNER -->
+<div class="banner">
+  <video autoplay muted loop playsinline>
+    <source src="../videos/banner.mp4" type="video/mp4">
+  </video>
+</div>
+
+<div class="gold-divider"></div>
+
+<!-- 🏆 TÍTULO -->
+<div class="logo-container home-title">
+  <svg class="logo-svg" viewBox="0 0 1200 220" preserveAspectRatio="xMidYMid meet">
+    <defs>
+      <filter id="goldGlow">
+        <feGaussianBlur stdDeviation="6" result="blur"/>
+        <feMerge>
+          <feMergeNode in="blur"/>
+          <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+      </filter>
+      <path id="textPath" d="M0 150 H1200" fill="none"/>
+    </defs>
+
+    <text font-size="110" font-family="Great Vibes, cursive"
+      fill="#8a6a1f" font-style="italic" text-anchor="middle">
+      <textPath href="#textPath" startOffset="50%">
+        Juegos Jackpot
+      </textPath>
+    </text>
+
+    <text font-size="110" font-family="Great Vibes, cursive"
+      fill="none" stroke="#ffd700" stroke-width="2"
+      filter="url(#goldGlow)"
+      stroke-dasharray="1400"
+      stroke-dashoffset="1400"
+      font-style="italic" text-anchor="middle">
+      <textPath href="#textPath" startOffset="50%">
+        Juegos Jackpot
+      </textPath>
+      <animate attributeName="stroke-dashoffset" from="1400" to="0" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.2;0.8;1" dur="5s" repeatCount="indefinite"/>
+    </text>
+  </svg>
+</div>
+
+<section class="hero-phrase">
+  LLEGÓ LA NUEVA ERA DEL JACKPOT — ¡GANÁ A LO GRANDE CON TUS REINAS!
+</section>
+
+<!-- 🎮 TARJETAS DE JUEGO -->
+<main class="games-grid">
+
+  <!-- RULETA -->
+  <div class="card pulse-effect">
+    <div class="card-top">RULETA LUCKY</div>
+
+    <div class="video-box">
+      <div class="ruleta-container">
+        <div class="ruleta-pro"></div>
+        <div class="ruleta-center"></div>
+      </div>
+    </div>
+
+    <div class="input-container">
+      <input id="ruletaCodigo" class="gold-input" type="text" placeholder="INGRESÁ TU CÓDIGO">
+    </div>
+
+    <button id="ruletaBtn" class="cta-game">ACTIVAR</button>
+  </div>
+
+  <!-- CAJA -->
+  <div class="card pulse-effect">
+    <div class="card-top">CAJA SORPRESA</div>
+
+    <div class="video-box">
+      <div class="floating-gift">🎁</div>
+    </div>
+
+    <div class="input-container">
+      <input id="cajaCodigo" class="gold-input" type="text" placeholder="INGRESÁ TU CÓDIGO">
+    </div>
+
+    <button id="cajaBtn" class="cta-game">ACTIVAR</button>
+  </div>
+
+  <!-- DIAMANTE -->
+  <div class="card pulse-effect">
+    <div class="card-top">DIAMANTE REAL</div>
+
+    <div class="video-box">
+      <div class="shining-diamond">💎</div>
+    </div>
+
+    <div class="input-container">
+      <input id="diamanteCodigo" class="gold-input" type="text" placeholder="INGRESÁ TU CÓDIGO">
+    </div>
+
+    <button id="diamanteBtn" class="cta-game">ACTIVAR</button>
+  </div>
+
+</main>
+
+<footer class="footer-section">
+  <p class="card-bottom">¡RECLAMÁ TU BONO EN LAS LÍNEAS DIRECTAS!</p>
+
+<div class="social-grid">
+  <a href="https://wa.me/5491123096726" target="_blank" class="btn-social line-1">LINEA 1</a>
+  <a href="https://wa.me/5491157222265" target="_blank" class="btn-social line-2">LINEA 2</a>
+  <a href="https://t.me/lineadirectarjq" target="_blank" class="btn-social line-3">LINEA 3</a>
+  <a href="https://t.me/lineadirectarjq1" target="_blank" class="btn-social line-4">LINEA 4</a>
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

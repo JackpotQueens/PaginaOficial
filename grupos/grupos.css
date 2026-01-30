@@ -1,0 +1,291 @@
+*{box-sizing:border-box;}
+
+body{
+  margin:0;
+  background:radial-gradient(circle at top,#7a0000,#0b0000 80%);
+  font-family:'Cinzel',serif;
+  color:white;
+  overflow-x:hidden;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+/* BANNER */
+.banner{
+  width:100%;
+  height:clamp(160px, 28vw, 340px);
+  background:black;
+  overflow:hidden;
+  position:relative;
+}
+.banner video{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+}
+
+/* LINEA */
+.gold-divider{
+  width:100%;
+  height:2px;
+  background:linear-gradient(90deg,transparent,#ffd700,transparent);
+  box-shadow:0 0 14px rgba(255,215,0,.9);
+}
+
+/* VOLVER (NO TOCAR) */
+.btn-volver{
+  margin:12px 0 0;
+  padding:10px 28px;
+  border-radius:30px;
+  background:linear-gradient(135deg,#fff2b0,#ffd700,#cfa200);
+  color:#4b0000;
+  font-weight:900;
+  text-decoration:none;
+  box-shadow:0 0 25px #ffd700;
+}
+
+/* TITULOS SVG */
+.home-title{
+  width:100%;
+  max-width:1000px;
+  margin-top:10px;
+  padding:0 12px;
+}
+.logo-svg{width:100%;}
+
+/* TITULO 2 */
+.gold-title-svg{
+  width:100%;
+  max-width:1000px;
+  margin-top:12px;
+  padding:0 12px;
+}
+
+/* FRASE */
+.hero-phrase{
+  text-align:center;
+  font-weight:900;
+  font-size:clamp(1rem, 2.7vw, 1.25rem);
+  padding:14px 20px;
+  margin:12px auto 24px;
+  background:linear-gradient(90deg,transparent,rgba(0,0,0,.55),transparent);
+  text-shadow:0 0 15px rgba(255,255,255,.5);
+  max-width:1100px;
+}
+
+/* ✅ CIRCULOS */
+.circles-section{
+  width:100%;
+  max-width:1200px;
+  display:flex;
+  justify-content:center;
+  gap:36px;
+  flex-wrap:wrap;
+  padding:10px 15px 30px;
+}
+
+.circle-card{
+  width:min(280px, 92vw);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:14px;
+}
+
+/* VIDEO CIRCULAR */
+.circle-video{
+  width:clamp(180px, 42vw, 230px);
+  height:clamp(180px, 42vw, 230px);
+  border-radius:50%;
+  overflow:hidden;
+  background:black;
+  padding:0;
+  cursor:pointer;
+  transition:.25s;
+  border:3px solid #ffd700;
+  box-shadow:0 0 40px rgba(255,215,0,.85), inset 0 0 25px rgba(255,215,0,.6);
+}
+.circle-video:hover{ transform:scale(1.04); }
+.circle-video video{ width:100%; height:100%; object-fit:cover; display:block; }
+
+/* ✅ COLORES SOLO CIRCULOS */
+.circle-violeta .circle-video{
+  border:3px solid #b000ff;
+  box-shadow:0 0 45px rgba(176,0,255,.85), inset 0 0 25px rgba(255,255,255,.4);
+}
+.circle-rosa .circle-video{
+  border:3px solid #ff4fd8;
+  box-shadow:0 0 45px rgba(255,79,216,.85), inset 0 0 25px rgba(255,255,255,.4);
+}
+.circle-turquesa .circle-video{
+  border:3px solid #00ffe5;
+  box-shadow:0 0 45px rgba(0,255,229,.85), inset 0 0 25px rgba(255,255,255,.4);
+}
+
+/* ✅ BOTONES TG (DISTINTOS COLORES) */
+.btn-tg{
+  width:100%;
+  text-align:center;
+  padding:16px 20px;
+  border-radius:40px;
+  font-weight:900;
+  text-decoration:none;
+  color:white;
+  border:1px solid rgba(255,255,255,.25);
+  letter-spacing:1px;
+  transition:.25s;
+}
+.btn-tg:hover{ transform:scale(1.04); }
+
+.tg-violeta{
+  background:linear-gradient(135deg,#b000ff,#6b00ff,#ff00ff);
+  box-shadow:0 0 35px rgba(176,0,255,.8);
+}
+.tg-rosa{
+  background:linear-gradient(135deg,#ff2ba8,#ff00ff,#ff7a00);
+  box-shadow:0 0 35px rgba(255,43,168,.75);
+}
+.tg-turquesa{
+  background:linear-gradient(135deg,#00ffe5,#00b2ff,#0088cc);
+  box-shadow:0 0 35px rgba(0,255,229,.7);
+}
+
+/* cuando está activo */
+.btn-tg.active-tg{
+  filter:saturate(1.35);
+  transform:scale(1.04);
+  box-shadow:0 0 70px rgba(255,255,255,.85);
+}
+
+/* TEXTO BLANCO */
+.white-sub{
+  margin-top:4px;
+  text-align:center;
+  font-weight:900;
+  font-size:clamp(1.05rem, 3vw, 1.3rem);
+  padding:12px 18px;
+  background:linear-gradient(90deg,transparent,rgba(0,0,0,.55),transparent);
+  text-shadow:0 0 15px rgba(255,255,255,.6);
+  width:100%;
+}
+
+/* ✅ REELS */
+.vertical-section{
+  width:100%;
+  max-width:1200px;
+  display:flex;
+  justify-content:center;
+  gap:22px;
+  flex-wrap:wrap;
+  padding:26px 15px 36px;
+}
+
+.vertical-video{
+  width:clamp(220px, 88vw, 300px);
+  aspect-ratio: 9 / 16;
+  border-radius:26px;
+  overflow:hidden;
+  background:black;
+  border:3px solid #ffd700;
+  box-shadow:0 0 40px rgba(255,215,0,.75), inset 0 0 28px rgba(255,215,0,.45);
+}
+.vertical-video video{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+/* CONTACTO ABAJO */
+.contacto-final{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  padding:0 15px 90px;
+}
+
+.btn-contacto{
+  width:min(520px, 92vw);
+  text-align:center;
+  padding:18px 26px;
+  border-radius:60px;
+  font-weight:900;
+  text-decoration:none;
+  color:#4b0000;
+  background:linear-gradient(135deg,#fff2b0,#ffd700,#cfa200);
+  box-shadow:0 0 35px #ffd700;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  transition:.25s;
+}
+.btn-contacto:hover{
+  transform:scale(1.05);
+  box-shadow:0 0 65px rgba(255,215,0,.95);
+}
+
+/* EFECTOS */
+.pulse-soft{
+  animation:pulseSoft 2.8s infinite;
+}
+@keyframes pulseSoft{
+  0%,100%{transform:scale(1);}
+  50%{transform:scale(1.03);}
+}
+
+/* ✅ MODAL */
+.modal{
+  position:fixed;
+  inset:0;
+  z-index:5000;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.modal.hidden{display:none;}
+
+.modal-backdrop{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,.85);
+}
+
+.modal-content{
+  position:relative;
+  width:min(820px, 94vw);
+  background:linear-gradient(180deg,#2a0000,#0b0000);
+  border:2px solid rgba(255,215,0,.65);
+  border-radius:24px;
+  padding:16px;
+  box-shadow:0 0 80px rgba(255,215,0,.55);
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  z-index:10;
+}
+
+.modal-content video{
+  width:100%;
+  max-height:62vh;
+  border-radius:18px;
+  background:black;
+}
+
+.modal-close{
+  position:absolute;
+  top:10px;
+  right:12px;
+  width:44px;
+  height:44px;
+  border-radius:50%;
+  border:2px solid rgba(255,255,255,.2);
+  background:rgba(0,0,0,.55);
+  color:white;
+  font-size:20px;
+  cursor:pointer;
+  box-shadow:0 0 20px rgba(255,215,0,.35);
+}
+
+.modal-tg{margin-top:6px;}

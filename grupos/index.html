@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Grupos | Red Jackpot Queen's</title>
+
+  <!-- FUENTES -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cinzel:wght@700;900&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="grupos.css">
+</head>
+
+<body>
+
+  <!-- BANNER VIDEO -->
+  <div class="banner">
+    <video autoplay muted loop playsinline>
+      <source src="../videos/banner.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="gold-divider"></div>
+
+  <!-- VOLVER -->
+  <a class="btn-volver" href="../index.html">← VOLVER AL INICIO</a>
+
+  <!-- TITULO SVG -->
+  <div class="logo-container home-title">
+    <svg class="logo-svg" viewBox="0 0 1200 220" preserveAspectRatio="xMidYMid meet">
+      <defs>
+        <filter id="goldGlow">
+          <feGaussianBlur stdDeviation="6" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+        <path id="textPath" d="M0 150 H1200" fill="none"/>
+      </defs>
+
+      <text font-size="105" font-family="Great Vibes, cursive"
+        fill="#8a6a1f" font-style="italic" text-anchor="middle">
+        <textPath href="#textPath" startOffset="50%">Gana en Nuestras Dinamicas</textPath>
+      </text>
+
+      <text font-size="105" font-family="Great Vibes, cursive"
+        fill="none" stroke="#ffd700" stroke-width="2"
+        filter="url(#goldGlow)"
+        stroke-dasharray="1400"
+        stroke-dashoffset="1400"
+        font-style="italic" text-anchor="middle">
+        <textPath href="#textPath" startOffset="50%">Gana en Nuestras Dinamicas</textPath>
+        <animate attributeName="stroke-dashoffset" from="1400" to="0" dur="5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.2;0.8;1" dur="5s" repeatCount="indefinite"/>
+      </text>
+    </svg>
+  </div>
+
+  <!-- FRASE -->
+  <section class="hero-phrase">
+    PARTICIPÁ EN NUESTROS GRUPOS — ¡DINÁMICAS, BONOS Y PREMIOS TODOS LOS DÍAS!
+  </section>
+
+  <!-- ✅ 3 CIRCULOS -->
+  <section class="circles-section" aria-label="Grupos con videos">
+
+    <!-- 1 VIOLETA -->
+    <div class="circle-card circle-violeta" data-tg="https://t.me/+UFQx-wpOWkQ2YWJh">
+      <button class="circle-video" aria-label="Ver video Grupo 1" data-video="../videos/grupo-1.mp4">
+        <video autoplay muted loop playsinline preload="metadata">
+          <source src="../videos/grupo-1.mp4" type="video/mp4">
+        </video>
+      </button>
+      <a class="btn-tg tg-violeta" target="_blank" href="https://t.me/+UFQx-wpOWkQ2YWJh">GRUPO CASINO ONLINE 24HS</a>
+    </div>
+
+    <!-- 2 ROSA -->
+    <div class="circle-card circle-rosa" data-tg="https://t.me/+8wlrmxlC3A4xY2Ux">
+      <button class="circle-video" aria-label="Ver video Grupo 2" data-video="../videos/grupo-2.mp4">
+        <video autoplay muted loop playsinline preload="metadata">
+          <source src="../videos/grupo-2.mp4" type="video/mp4">
+        </video>
+      </button>
+      <a class="btn-tg tg-rosa" target="_blank" href="https://t.me/+8wlrmxlC3A4xY2Ux">DINÁMICAS R. JACKPOT QUEEN'S</a>
+    </div>
+
+    <!-- 3 TURQUESA -->
+    <div class="circle-card circle-turquesa" data-tg="https://t.me/+wJsTbLByd1BiYWYx">
+      <button class="circle-video" aria-label="Ver video Grupo 3" data-video="../videos/grupo-3.mp4">
+        <video autoplay muted loop playsinline preload="metadata">
+          <source src="../videos/grupo-3.mp4" type="video/mp4">
+        </video>
+      </button>
+      <a class="btn-tg tg-turquesa" target="_blank" href="https://t.me/+wJsTbLByd1BiYWYx">GRUPO TODAS LAS REDES</a>
+    </div>
+
+  </section>
+
+  <!-- ✅ TITULO 2 CON MISMO EFECTO SVG -->
+  <div class="logo-container gold-title-svg">
+    <svg class="logo-svg" viewBox="0 0 1200 220" preserveAspectRatio="xMidYMid meet">
+      <defs>
+        <filter id="goldGlow2">
+          <feGaussianBlur stdDeviation="6" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+        <path id="textPath2" d="M0 150 H1200" fill="none"/>
+      </defs>
+
+      <text font-size="105" font-family="Great Vibes, cursive"
+        fill="#8a6a1f" font-style="italic" text-anchor="middle">
+        <textPath href="#textPath2" startOffset="50%">Ellos Ganan con Nosotras</textPath>
+      </text>
+
+      <text font-size="105" font-family="Great Vibes, cursive"
+        fill="none" stroke="#ffd700" stroke-width="2"
+        filter="url(#goldGlow2)"
+        stroke-dasharray="1400"
+        stroke-dashoffset="1400"
+        font-style="italic" text-anchor="middle">
+        <textPath href="#textPath2" startOffset="50%">Ellos Ganan con Nosotras</textPath>
+        <animate attributeName="stroke-dashoffset" from="1400" to="0" dur="5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.2;0.8;1" dur="5s" repeatCount="indefinite"/>
+      </text>
+    </svg>
+  </div>
+
+  <!-- TEXTO BLANCO -->
+  <div class="white-sub">
+    ¡AHORA TE TOCA A VOS, TE ESPERAMOS!
+  </div>
+
+  <!-- ✅ 3 REELS -->
+  <section class="vertical-section" aria-label="Videos verticales">
+
+    <div class="vertical-video pulse-soft">
+      <video autoplay muted loop playsinline preload="metadata">
+        <source src="../videos/reel-1.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="vertical-video pulse-soft">
+      <video autoplay muted loop playsinline preload="metadata">
+        <source src="../videos/reel-2.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="vertical-video pulse-soft">
+      <video autoplay muted loop playsinline preload="metadata">
+        <source src="../videos/reel-3.mp4" type="video/mp4">
+      </video>
+    </div>
+
+  </section>
+
+  <!-- ✅ BOTÓN CONTACTANOS ABAJO -->
+  <div class="contacto-final">
+    <a href="../contacto.html" class="btn-contacto">CONTACTANOS</a>
+  </div>
+
+  <!-- ✅ MODAL VIDEO FULL -->
+  <div id="videoModal" class="modal hidden">
+    <div class="modal-backdrop"></div>
+
+    <div class="modal-content">
+      <button id="cerrarModal" class="modal-close" aria-label="Cerrar">✕</button>
+
+      <video id="modalVideo" controls playsinline></video>
+
+      <a id="modalTgBtn" class="btn-tg modal-tg" target="_blank" href="#">
+        UNIRME AL GRUPO
+      </a>
+    </div>
+  </div>
+
+  <script src="grupos.js"></script>
+</body>
+</html>

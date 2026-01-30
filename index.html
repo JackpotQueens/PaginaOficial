@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Red Jackpot Queen's</title>
+
+  <!-- FUENTES -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cinzel:wght@700;900&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="home-style.css">
+</head>
+
+<body>
+
+  <!-- BANNER VIDEO -->
+  <div class="banner">
+    <video autoplay muted loop playsinline>
+      <source src="videos/banner.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- LINEA DORADA + BRILLOS -->
+  <div class="gold-divider">
+    <canvas id="goldParticles"></canvas>
+  </div>
+
+  <!-- TITULO SVG -->
+  <div class="logo-container home-title">
+    <svg class="logo-svg" viewBox="0 0 1200 220" preserveAspectRatio="xMidYMid meet">
+      <defs>
+        <filter id="goldGlow">
+          <feGaussianBlur stdDeviation="6" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+        <path id="textPath" d="M0 150 H1200" fill="none"/>
+      </defs>
+
+      <text font-size="110" font-family="Great Vibes, cursive"
+        fill="#8a6a1f" font-style="italic" text-anchor="middle">
+        <textPath href="#textPath" startOffset="50%">
+          Red Jackpot Queen's
+        </textPath>
+      </text>
+
+      <text font-size="110" font-family="Great Vibes, cursive"
+        fill="none" stroke="#ffd700" stroke-width="2"
+        filter="url(#goldGlow)"
+        stroke-dasharray="1400"
+        stroke-dashoffset="1400"
+        font-style="italic" text-anchor="middle">
+        <textPath href="#textPath" startOffset="50%">
+          Red Jackpot Queen's
+        </textPath>
+        <animate attributeName="stroke-dashoffset" from="1400" to="0" dur="5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.2;0.8;1" dur="5s" repeatCount="indefinite"/>
+      </text>
+    </svg>
+  </div>
+
+  <!-- FRASE IMPACTO -->
+  <section class="hero-phrase">
+    LLEGÓ LA NUEVA ERA DEL JACKPOT ¡GANÁ A LO GRANDE CON TUS REINAS!
+  </section>
+
+  <!-- CARRUSEL -->
+  <section class="carousel-scene">
+    <div class="carousel">
+
+      <div class="card" data-link="sala-de-juegos/index.html">
+        <div class="card-top">JUEGOS JACKPOT</div>
+        <div class="video-box">
+          <video autoplay muted loop playsinline>
+            <source src="videos/card-jackpot.mp4" type="video/mp4">
+          </video>
+        </div>
+        <button class="cta">CLICK ACÁ</button>
+        <div class="card-bottom">¡CARGÁ Y GANÁ AHORA!</div>
+      </div>
+
+      <div class="card" data-link="referencias.html">
+        <div class="card-top">REFERENCIAS</div>
+        <div class="video-box">
+          <video autoplay muted loop playsinline>
+            <source src="videos/card-referencias.mp4" type="video/mp4">
+          </video>
+        </div>
+        <button class="cta">CLICK ACÁ</button>
+        <div class="card-bottom">CLIENTES FELICES</div>
+      </div>
+
+<div class="card" data-link="grupos/index.html">
+  <div class="card-top">GANÁ CON NOSOTRAS</div>
+  <div class="video-box">
+    <video autoplay muted loop playsinline>
+      <source src="videos/card-grupos.mp4" type="video/mp4">
+    </video>
+  </div>
+  <button class="cta">CLICK ACÁ</button>
+  <div class="card-bottom">GRUPOS R. JACKPOT QUEEN'S</div>
+</div>
+
+
+      <div class="card" data-link="contacto.html">
+        <div class="card-top">LÍNEAS DIRECTAS</div>
+        <div class="video-box">
+          <video autoplay muted loop playsinline>
+            <source src="videos/card-lineas.mp4" type="video/mp4">
+          </video>
+        </div>
+        <button class="cta">CLICK ACÁ</button>
+        <div class="card-bottom">CONTACTANOS 24/7</div>
+      </div>
+
+      <div class="card" data-link="forma-parte.html">
+        <div class="card-top">FORMA PARTE</div>
+        <div class="video-box">
+          <video autoplay muted loop playsinline>
+            <source src="videos/card-forma-parte.mp4" type="video/mp4">
+          </video>
+        </div>
+        <button class="cta">SUMATE</button>
+        <div class="card-bottom">INCORPORAMOS CAJEROS</div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="home-script.js"></script>
+</body>
+</html>

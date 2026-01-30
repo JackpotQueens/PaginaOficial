@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diamante Real | Red Jackpot Queen's</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cinzel:wght@700;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="diamantes.css">
+</head>
+
+<body>
+
+<!-- BANNER -->
+<div class="banner">
+  <video autoplay muted loop playsinline>
+    <source src="../../videos/banner.mp4" type="video/mp4">
+  </video>
+</div>
+
+<div class="gold-divider"></div>
+
+<a href="../index.html" class="btn-volver">← VOLVER AL INICIO</a>
+
+<!-- TITULO -->
+<div class="logo-container home-title">
+  <svg class="logo-svg" viewBox="0 0 1200 220" preserveAspectRatio="xMidYMid meet">
+    <defs>
+      <filter id="goldGlow">
+        <feGaussianBlur stdDeviation="6" result="blur"/>
+        <feMerge>
+          <feMergeNode in="blur"/>
+          <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+      </filter>
+      <path id="textPath" d="M0 150 H1200" fill="none"/>
+    </defs>
+
+    <text font-size="150" font-family="Great Vibes"
+          fill="#8a6a1f" text-anchor="middle">
+      <textPath href="#textPath" startOffset="50%">Juegos Jackpot</textPath>
+    </text>
+
+    <text font-size="150" font-family="Great Vibes"
+          fill="none" stroke="#ffd700" stroke-width="2.5"
+          filter="url(#goldGlow)" stroke-dasharray="1400"
+          stroke-dashoffset="1400" text-anchor="middle">
+      <textPath href="#textPath" startOffset="50%">Juegos Jackpot</textPath>
+      <animate attributeName="stroke-dashoffset" from="1400" to="0" dur="5s" repeatCount="indefinite"/>
+    </text>
+  </svg>
+</div>
+
+<section class="hero-phrase">
+  TOCÁ 5 DIAMANTES — EL ÚLTIMO COMPLETA EL TRÍO
+</section>
+
+<!-- LAYOUT -->
+<div class="diamantes-layout">
+
+  <!-- DIAMANTES -->
+  <div class="diamantes-area">
+
+    <div class="diamond" data-id="1"></div>
+    <div class="diamond" data-id="2"></div>
+    <div class="diamond" data-id="3"></div>
+    <div class="diamond" data-id="4"></div>
+    <div class="diamond" data-id="5"></div>
+    <div class="diamond" data-id="6"></div>
+    <div class="diamond" data-id="7"></div>
+    <div class="diamond" data-id="8"></div>
+    <div class="diamond" data-id="9"></div>
+    <div class="diamond" data-id="10"></div>
+    <div class="diamond" data-id="11"></div>
+    <div class="diamond" data-id="12"></div>
+
+  </div>
+
+  <!-- LINEAS -->
+  <div class="lineas-directas">
+    <a href="https://wa.me/5491123096726" class="btn-wp1" target="_blank">WHATSAPP 1</a>
+    <a href="https://wa.me/5491157222265" class="btn-wp2" target="_blank">WHATSAPP 2</a>
+    <a href="https://t.me/LINEADIRECTARJQ" class="btn-tg1" target="_blank">TELEGRAM 1</a>
+    <a href="https://t.me/LINEADIRECTARJQ1" class="btn-tg2" target="_blank">TELEGRAM 2</a>
+  </div>
+
+</div>
+
+<!-- MODAL -->
+<div id="mensajePremio" class="hidden">
+  <div class="contenedor-premio">
+
+    <h2>¡Felicidades!</h2>
+
+    <p class="premio-label">TU PREMIO ES:</p>
+
+    <div id="resultadoSecuencia"></div>
+
+    <div class="captura-box">
+      SACA CAPTURA Y RECLAMALO EN LA LÍNEA DONDE CARGASTE
+    </div>
+
+    <a href="../index.html" class="volver-link">VOLVER AL INICIO</a>
+  </div>
+</div>
+
+<script src="diamantes.js"></script>
+</body>
+</html>

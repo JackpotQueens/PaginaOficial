@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Referencias | Red Jackpot Queen's</title>
+
+  <!-- FUENTES -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cinzel:wght@700;900&display=swap" rel="stylesheet">
+
+  <!-- MISMO CSS DEL HOME (NO TOCAR) -->
+  <link rel="stylesheet" href="home-style.css">
+</head>
+
+<body>
+
+  <!-- BANNER -->
+  <div class="banner">
+    <video autoplay muted loop playsinline>
+      <source src="videos/banner.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- LINEA DORADA -->
+  <div class="gold-divider"></div>
+
+  <!-- TITULO -->
+  <div class="logo-container home-title">
+    <svg class="logo-svg" viewBox="0 0 1200 220" preserveAspectRatio="xMidYMid meet">
+      <defs>
+        <filter id="goldGlow">
+          <feGaussianBlur stdDeviation="6" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+        <path id="textPath" d="M0 150 H1200" fill="none"/>
+      </defs>
+
+      <text font-size="110" font-family="Great Vibes, cursive"
+        fill="#8a6a1f" font-style="italic" text-anchor="middle">
+        <textPath href="#textPath" startOffset="50%">
+          Referencias Reales
+        </textPath>
+      </text>
+
+      <text font-size="110" font-family="Great Vibes, cursive"
+        fill="none" stroke="#ffd700" stroke-width="2"
+        filter="url(#goldGlow)"
+        stroke-dasharray="1400"
+        stroke-dashoffset="1400"
+        font-style="italic" text-anchor="middle">
+        <textPath href="#textPath" startOffset="50%">
+          Referencias Reales
+        </textPath>
+        <animate attributeName="stroke-dashoffset" from="1400" to="0" dur="5s" repeatCount="indefinite"/>
+      </text>
+    </svg>
+  </div>
+
+  <!-- FRASE -->
+  <section class="hero-phrase">
+    PAGOS REALES • CLIENTES FELICES • CONFIANZA TOTAL
+  </section>
+
+  <!-- BOTON CONTACTANOS -->
+  <div style="display:flex; justify-content:center; margin:20px 0 40px;">
+    <a href="contacto.html" style="text-decoration:none;">
+      <button class="cta">CONTACTANOS AHORA</button>
+    </a>
+  </div>
+
+  <!-- TARJETAS -->
+  <section style="
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+    padding-bottom:80px;
+  ">
+
+    <!-- CARD 1 -->
+    <div class="card" style="position:static;">
+      <div class="card-top">PAGOS EN SU TOTALIDAD</div>
+
+      <div class="video-box">
+        <video autoplay muted loop playsinline
+          style="width:100%; height:100%; object-fit:contain; background:black; border-radius:20px;">
+          <source src="videos/ref-1.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="card-bottom">BAJADAS ILIMITADAS</div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="card" style="position:static;">
+      <div class="card-top">CLIENTES FELICES</div>
+
+      <div class="video-box">
+        <video autoplay muted loop playsinline
+          style="width:100%; height:100%; object-fit:contain; background:black; border-radius:20px;">
+          <source src="videos/ref-2.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="card-bottom">Chats reales</div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="card" style="position:static;">
+      <div class="card-top">CONFIANZA</div>
+
+      <div class="video-box">
+        <video autoplay muted loop playsinline
+          style="width:100%; height:100%; object-fit:contain; background:black; border-radius:20px;">
+          <source src="videos/ref-3.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="card-bottom">Siempre cumplimos</div>
+    </div>
+
+  </section>
+
+</body>
+</html>

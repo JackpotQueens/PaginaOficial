@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Contacto | Red Jackpot Queen's</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cinzel:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="home-style.css">
+
+  <!-- ICONOS (Font Awesome) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0 15px 100px 15px;
+    }
+
+    /* BOTÓN VOLVER */
+    .btn-volver {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 9999;
+      text-decoration: none;
+      font-family: 'Cinzel', serif;
+      color: white;
+      background: rgba(0,0,0,0.8);
+      border: 1.5px solid #ffd700;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      transition: 0.3s;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .btn-volver:hover {
+      background: #ffd700;
+      color: black;
+      box-shadow: 0 0 15px #ffd700;
+    }
+
+    /* TITULO */
+    .logo-container.home-title { width: 100vw; margin-top: 60px; margin-bottom: 0; }
+    .logo-svg { width: 100%; height: auto; display: block; }
+
+    /* SUBTITULO */
+    .hero-phrase {
+      font-size: 2.2rem !important;
+      color: #fff;
+      text-shadow: 0 0 15px #ffd700;
+      margin: 10px 0 40px 0 !important;
+      font-family: 'Cinzel', serif;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+
+    /* SECCIONES */
+    .section-container {
+      width: 100%;
+      max-width: 800px;
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .section-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1.5rem;
+      color: #ffd700;
+      text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+      margin-bottom: 25px;
+      letter-spacing: 2px;
+      border-bottom: 1px solid rgba(255, 215, 0, 0.3);
+      display: inline-block;
+      padding-bottom: 8px;
+    }
+
+    /* GRILLA DE BOTONES */
+    .button-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      width: 100%;
+    }
+
+    .btn-premium {
+      text-decoration: none;
+      font-family: 'Cinzel', serif;
+      font-weight: 700;
+      font-size: 1rem;
+      color: white !important;
+      padding: 20px 10px;
+      border-radius: 12px;
+      text-align: center;
+      border: 2px solid rgba(255,255,255,0.3);
+      text-transform: uppercase;
+      transition: 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      animation: latido 2s infinite;
+    }
+
+    /* ICONOS EN BOTONES */
+    .btn-premium i {
+      font-size: 1.3rem;
+      filter: drop-shadow(0 0 6px rgba(0,0,0,0.5));
+    }
+
+    /* COLORES */
+    .wsp-btn { background: #25d366; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3); }
+    .tg-btn  { background: #cc9600; box-shadow: 0 4px 15px rgba(255, 198, 11, 0.3); }
+    .tk-btn  { background: #000000; border-color: #ffd700; box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2); }
+    .ig-btn  { background: linear-gradient(45deg, #f09433, #dc2743, #bc1888); box-shadow: 0 4px 15px rgba(220, 39, 67, 0.3); }
+
+    /* 🔵 FACEBOOK */
+    .fb-btn {
+      background: linear-gradient(180deg, #1877f2, #0e5dc9);
+      box-shadow: 0 4px 15px rgba(24, 119, 242, 0.35);
+      border-color: rgba(255,255,255,0.25);
+    }
+
+    .fb-btn:hover{
+      filter: brightness(1.12);
+      transform: translateY(-2px) scale(1.02);
+    }
+
+    @keyframes latido {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.03); }
+    }
+
+    /* FIRMA FINAL */
+    .footer-sig { width: 100%; height: 100px; margin-top: 60px; }
+
+    @media (max-width: 480px) {
+      .logo-container.home-title { margin-top: 40px; }
+      .hero-phrase { font-size: 1.4rem !important; }
+      .section-title { font-size: 1.1rem; }
+      .btn-premium { font-size: 0.85rem; padding: 15px 5px; }
+      .btn-premium i { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <a href="index.html" class="btn-volver">← INICIO</a>
+
+  <div class="banner">
+    <video autoplay muted loop playsinline>
+      <source src="videos/banner.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="gold-divider"></div>
+
+  <div class="main-container">
+
+    <div class="logo-container home-title">
+      <svg class="logo-svg" viewBox="150 20 900 220" preserveAspectRatio="xMidYMid meet">
+        <defs>
+          <filter id="goldGlow">
+            <feGaussianBlur stdDeviation="6" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+          <path id="textPath" d="M0 150 H1200" fill="none"/>
+        </defs>
+
+        <text font-size="145" font-family="Great Vibes, cursive" fill="#8a6a1f" font-style="italic" text-anchor="middle">
+          <textPath href="#textPath" startOffset="50%">Contáctanos</textPath>
+        </text>
+
+        <text font-size="145" font-family="Great Vibes, cursive" fill="none" stroke="#ffd700" stroke-width="2.5"
+              filter="url(#goldGlow)" stroke-dasharray="1400" stroke-dashoffset="1400" font-style="italic" text-anchor="middle">
+          <textPath href="#textPath" startOffset="50%">Contáctanos</textPath>
+          <animate attributeName="stroke-dashoffset" from="1400" to="0" dur="5s" repeatCount="indefinite"/>
+        </text>
+      </svg>
+    </div>
+
+    <section class="hero-phrase">¡LINEAS ACTIVAS 24/7 PROBA TU SUERTE CON NOSOTRAS AHORA!</section>
+
+    <!-- WHATSAPP -->
+    <div class="section-container">
+      <h2 class="section-title">LINEAS DIRECTAS DE WHATSAPP</h2>
+      <div class="button-grid">
+        <a href="https://wa.me/5491123096726" target="_blank" class="btn-premium wsp-btn"><i class="fa-brands fa-whatsapp"></i> ABII</a>
+        <a href="https://wa.me/5491157222265" target="_blank" class="btn-premium wsp-btn"><i class="fa-brands fa-whatsapp"></i> CAMILUZ</a>
+        <a href="https://wa.me/5491126081561" target="_blank" class="btn-premium wsp-btn"><i class="fa-brands fa-whatsapp"></i> PRII</a>
+        <a href="https://wa.me/5491126077305" target="_blank" class="btn-premium wsp-btn"><i class="fa-brands fa-whatsapp"></i> GIGIBET SUERTE</a>
+      </div>
+    </div>
+
+    <!-- TELEGRAM -->
+    <div class="section-container">
+      <h2 class="section-title">LINEAS OFICIALES DE TELEGRAM</h2>
+      <div class="button-grid">
+        <a href="https://t.me/LINEADIRECTARJQ" target="_blank" class="btn-premium tg-btn"><i class="fa-brands fa-telegram"></i> LINEA 1</a>
+        <a href="https://t.me/LINEADIRECTARJQ1" target="_blank" class="btn-premium tg-btn"><i class="fa-brands fa-telegram"></i> LINEA 2</a>
+      </div>
+    </div>
+
+    <!-- TIKTOK -->
+    <div class="section-container">
+      <h2 class="section-title">SEGUINOS EN TIKTOK</h2>
+      <div class="button-grid">
+        <a href="https://www.tiktok.com/@abigail.lopez2906" target="_blank" class="btn-premium tk-btn"><i class="fa-brands fa-tiktok"></i> ABII</a>
+        <a href="https://www.tiktok.com/@cam913ha" target="_blank" class="btn-premium tk-btn"><i class="fa-brands fa-tiktok"></i> CAMILUZ</a>
+        <a href="https://www.tiktok.com/@prii_lopezz0" target="_blank" class="btn-premium tk-btn"><i class="fa-brands fa-tiktok"></i> PRII</a>
+        <a href="https://www.tiktok.com/@giselarominacasad" target="_blank" class="btn-premium tk-btn"><i class="fa-brands fa-tiktok"></i> GIGIBET SUERTE</a>
+      </div>
+    </div>
+
+    <!-- FACEBOOK (LINKS REALES) -->
+    <div class="section-container">
+      <h2 class="section-title">SEGUINOS EN FACEBOOK</h2>
+      <div class="button-grid">
+        <a href="https://www.facebook.com/profile.php?id=61584773308576" target="_blank" class="btn-premium fb-btn"><i class="fa-brands fa-facebook-f"></i> ABII LOPEZ</a>
+        <a href="https://www.facebook.com/profile.php?id=61583538911762" target="_blank" class="btn-premium fb-btn"><i class="fa-brands fa-facebook-f"></i> CAMILUZ</a>
+        <a href="https://www.facebook.com/gigisuertee" target="_blank" class="btn-premium fb-btn"><i class="fa-brands fa-facebook-f"></i> GIGIBET SUERTE</a>
+        <a href="https://www.facebook.com/profile.php?id=61583845255806" target="_blank" class="btn-premium fb-btn"><i class="fa-brands fa-facebook-f"></i> PRII LOPEZ</a>
+      </div>
+    </div>
+
+    <!-- INSTAGRAM -->
+    <div class="section-container">
+      <h2 class="section-title">SEGUINOS EN INSTAGRAM</h2>
+      <div class="button-grid">
+        <a href="https://www.instagram.com/ABIR.LOPEZ" target="_blank" class="btn-premium ig-btn"><i class="fa-brands fa-instagram"></i> ABII</a>
+        <a href="https://www.instagram.com/CAMILUZBET" target="_blank" class="btn-premium ig-btn"><i class="fa-brands fa-instagram"></i> CAMILUZ</a>
+        <a href="https://www.instagram.com/prilopezoficial" target="_blank" class="btn-premium ig-btn"><i class="fa-brands fa-instagram"></i> PRII</a>
+        <a href="https://www.instagram.com/gigita.82" target="_blank" class="btn-premium ig-btn"><i class="fa-brands fa-instagram"></i> GIGIBET SUERTE</a>
+      </div>
+    </div>
+
+    <div class="footer-sig">
+      <svg viewBox="0 0 800 120" style="width: 100%; height: 100%;">
+        <text x="50%" y="70" text-anchor="middle" font-family="Great Vibes, cursive" font-size="70" fill="#8a6a1f" font-style="italic">
+          Red Jackpot Queen's
+        </text>
+        <text x="50%" y="70" text-anchor="middle" font-family="Great Vibes, cursive" font-size="70" fill="none" stroke="#ffd700" stroke-width="1.5"
+              filter="url(#goldGlow)" font-style="italic" stroke-dasharray="1000" stroke-dashoffset="1000">
+          Red Jackpot Queen's
+          <animate attributeName="stroke-dashoffset" from="1000" to="0" dur="5s" repeatCount="indefinite"/>
+        </text>
+      </svg>
+    </div>
+
+  </div>
+
+  <script src="home-script.js"></script>
+</body>
+</html>

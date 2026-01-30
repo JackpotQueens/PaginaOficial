@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Forma Parte | Red Jackpot Queen's</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cinzel:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="home-style.css">
+
+  <style>
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      box-sizing: border-box;
+      padding-bottom: 60px;
+    }
+
+    .btn-volver {
+      position: fixed; top: 20px; left: 20px; z-index: 9999;
+      text-decoration: none; font-family: 'Cinzel', serif; color: white;
+      background: rgba(0,0,0,0.7); border: 1px solid #ffd700;
+      padding: 12px 20px; border-radius: 8px; font-size: 0.9rem;
+      transition: 0.3s; text-transform: uppercase;
+    }
+    .btn-volver:hover { background: #ffd700; color: black; box-shadow: 0 0 15px #ffd700; }
+
+    .logo-container.home-title {
+      width: 100vw;
+      margin-top: 60px;
+      margin-bottom: 10px;
+    }
+    
+    .logo-svg { width: 100%; height: auto; display: block; }
+
+    .hero-phrase {
+      font-size: 2.2rem !important;
+      color: #fff;
+      text-shadow: 0 0 15px #ffd700;
+      margin: 20px 0 !important;
+      font-family: 'Cinzel', serif;
+      text-align: center;
+    }
+
+    .requisitos-card {
+      width: 95%;
+      max-width: 550px;
+      background: rgba(0, 0, 0, 0.85);
+      border: 2px solid #ffd700;
+      border-radius: 20px;
+      position: relative;
+      margin: 20px auto;
+      padding: 85px 20px 85px 20px;
+      box-shadow: 0 0 30px rgba(255, 215, 0, 0.4);
+    }
+
+    .card-header-custom {
+      position: absolute;
+      top: 25px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      color: #fff;
+      font-family: 'Cinzel', serif;
+      font-size: 1.5rem;
+      letter-spacing: 3px;
+      font-weight: 900;
+    }
+
+    .requisitos-content { display: flex; justify-content: center; }
+    .requisitos-content ul { list-style: none; padding: 0; margin: 0; }
+    .requisitos-content li {
+      color: white;
+      font-family: 'Cinzel', serif;
+      font-size: 1.7rem;
+      margin-bottom: 25px;
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    .dot { color: #ffd700; margin-right: 20px; font-size: 2.2rem; }
+
+    .card-footer-signature {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .sig-svg { width: 90%; height: 100%; }
+
+    .btn-container { display: flex; flex-direction: column; align-items: center; gap: 30px; margin-top: 40px; }
+    
+    .btn-premium {
+      text-decoration: none;
+      font-family: 'Cinzel', serif;
+      font-weight: 900;
+      font-size: 1.6rem;
+      color: white !important;
+      width: 85%;
+      max-width: 450px;
+      padding: 25px;
+      border-radius: 15px;
+      text-align: center;
+      border: 3px solid #fff;
+      text-transform: uppercase;
+      animation: latido-lujo 1.5s infinite;
+      transition: 0.3s;
+    }
+
+    .btn-wsp { background: #25d366; }
+    .btn-tg { background: #0088cc; }
+
+    @keyframes latido-lujo {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); box-shadow: 0 0 35px #ffd700; }
+      100% { transform: scale(1); }
+    }
+
+    @media (max-width: 480px) {
+      .logo-container.home-title { margin-top: 40px; }
+      .hero-phrase { font-size: 1.5rem !important; }
+      .requisitos-content li { font-size: 1.2rem; }
+      .btn-premium { font-size: 1.2rem; padding: 20px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <a href="index.html" class="btn-volver">← INICIO</a>
+
+  <div class="banner">
+    <video autoplay muted loop playsinline><source src="videos/banner.mp4" type="video/mp4"></video>
+  </div>
+  <div class="gold-divider"></div>
+
+  <div class="main-container">
+    
+    <div class="logo-container home-title">
+      <svg class="logo-svg" viewBox="150 20 900 220" preserveAspectRatio="xMidYMid meet">
+        <defs>
+          <filter id="goldGlow"><feGaussianBlur stdDeviation="6" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+          <path id="textPath" d="M0 150 H1200" fill="none"/>
+        </defs>
+        <text font-size="145" font-family="Great Vibes, cursive" fill="#8a6a1f" font-style="italic" text-anchor="middle">
+          <textPath href="#textPath" startOffset="50%">Forma Parte</textPath>
+        </text>
+        <text font-size="145" font-family="Great Vibes, cursive" fill="none" stroke="#ffd700" stroke-width="2.5" filter="url(#goldGlow)" stroke-dasharray="1400" stroke-dashoffset="1400" font-style="italic" text-anchor="middle">
+          <textPath href="#textPath" startOffset="50%">Forma Parte</textPath>
+          <animate attributeName="stroke-dashoffset" from="1400" to="0" dur="5s" repeatCount="indefinite"/>
+        </text>
+      </svg>
+    </div>
+
+    <section class="hero-phrase">REQUISITOS CAJEROS</section>
+
+    <div class="requisitos-card">
+      <div class="card-header-custom">LEER CON ATENCIÓN</div>
+      <div class="requisitos-content">
+        <ul>
+          <li><span class="dot">✦</span> Ser mayor de 18 años</li>
+          <li><span class="dot">✦</span> Sin deudas en otras redes</li>
+          <li><span class="dot">✦</span> Ganas de crecer</li>
+          <li><span class="dot">✦</span> Sin escraches</li>
+        </ul>
+      </div>
+
+      <div class="card-footer-signature">
+        <svg viewBox="0 0 800 120" class="sig-svg">
+          <text x="50%" y="70" text-anchor="middle" font-family="Great Vibes, cursive" font-size="75" fill="#8a6a1f" font-style="italic">Red Jackpot Queen's</text>
+          <text x="50%" y="70" text-anchor="middle" font-family="Great Vibes, cursive" font-size="75" fill="none" stroke="#ffd700" stroke-width="1.8" filter="url(#goldGlow)" font-style="italic" stroke-dasharray="1000" stroke-dashoffset="1000">
+            Red Jackpot Queen's
+            <animate attributeName="stroke-dashoffset" from="1000" to="0" dur="5s" repeatCount="indefinite"/>
+          </text>
+        </svg>
+      </div>
+    </div>
+
+    <div class="btn-container">
+      <a href="https://wa.me/5491144716112" target="_blank" class="btn-premium btn-wsp">UNITE POR WHATSAPP</a>
+      <a href="https://t.me/LINEADIRECTARJQ1" target="_blank" class="btn-premium btn-tg">UNITE POR TELEGRAM</a>
+    </div>
+
+  </div>
+  <script src="home-script.js"></script>
+</body>
+</html>
